@@ -48,6 +48,12 @@ prevBtn?.addEventListener("click", () => {
   updateCarousel();
 });
 
+setInterval(() => {
+  const total = track.children.length;
+  index = (index + 1) % total;
+  updateCarousel();
+}, 3000); // troca a cada 4 segundos
+
 window.addEventListener("resize", updateCarousel);
 
 // animação inicial

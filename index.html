@@ -25,9 +25,9 @@
       <nav id="menu">
         <ul>
           <li><a href="#sobre">Apresentação</a></li>
-          <li><a href="#servicos">Abordagem</a></li>
-          <li><a href="#abordagem">A Psicoterapia</a></li>
-          <li><a href="#depoimentos">Contato</a></li>
+          <li><a href="#abordagem">Abordagem</a></li>
+          <li><a href="#psicoterapia">A Psicoterapia</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -48,9 +48,15 @@
 
         <div class="carousel">
         <div class="carousel-track" id="carouselTrack">
-            <img src="img1.jpg">
-            <img src="img2.jpg">
-            <img src="img3.jpg">
+            <img src="images/yas1_corr.jpeg">
+            <img src="images/yasmin2.jpeg">
+            <img src="images/yasmin3.jpeg">
+            <img src="images/yasmin4.jpeg">
+            <img src="images/yasmin5_corr.jpeg">
+            <img src="images/yasmin6.jpeg">
+            <img src="images/yasmin7.jpeg">
+            <img src="images/yasmin8.jpeg">
+            <img src="images/yasmin9.jpeg">
         </div>
 
         <button class="carousel-btn prev" id="prevBtn">❮</button>
@@ -76,69 +82,124 @@
     </div>
     </section>
 
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="section light reveal">
-    <div class="container">
-      <h2>Serviços</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Psicoterapia Individual</h3>
-          <p>Atendimento personalizado para adultos.</p>
+    <!-- ABORDAGEM -->
+    <section id="abordagem" class="section light reveal">
+      <div class="container abordagem">
+
+        <h2 class="abordagem-titulo">Minha Abordagem</h2>
+
+        <p class="abordagem-intro">
+          Os atendimentos são realizados a partir do viés da Psicologia Histórico-Cultural,
+          compreendendo que o sujeito é constituído nas relações sociais, históricas e culturais.
+        </p>
+
+        <div class="abordagem-grid">
+
+          <div class="abordagem-item">
+            <div class="abordagem-icone">🧠</div>
+            <h3>Subjetividade</h3>
+            <p>
+              Cada pessoa é compreendida a partir de sua história,
+              experiências e significados construídos ao longo da vida.
+            </p>
+          </div>
+
+          <div class="abordagem-item">
+            <div class="abordagem-icone">🤝</div>
+            <h3>Relações</h3>
+            <p>
+              O sujeito é constituído nas relações sociais e nos
+              vínculos que atravessam sua trajetória.
+            </p>
+          </div>
+
+          <div class="abordagem-item">
+            <div class="abordagem-icone">🌱</div>
+            <h3>Desenvolvimento</h3>
+            <p>
+              O processo terapêutico busca compreender vivências
+              e possibilitar novas formas de significação.
+            </p>
+          </div>
+
         </div>
-        <div class="card">
-          <h3>Terapia de Casal</h3>
-          <p>Fortalecimento de vínculos e comunicação.</p>
-        </div>
-        <div class="card">
-          <h3>Orientação Profissional</h3>
-          <p>Auxílio em decisões de carreira.</p>
-        </div>
+
+        <p class="abordagem-texto">
+          A clínica considera para além das questões apresentadas,
+          buscando compreender como vivências, vínculos e condições
+          concretas de vida participam da construção da subjetividade.
+        </p>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABORDAGEM -->
-  <section id="abordagem" class="section reveal">
-    <div class="container">
-      <h2>Abordagem</h2>
-      <p>
-        Descrição da abordagem terapêutica (TCC, Psicanálise, Humanista, etc).
-      </p>
-    </div>
-  </section>
+    <!-- A PSICOTERAPIA -->
+    <section id="psicoterapia" class="section reveal">
+      <div class="container psicoterapia-layout">
 
-  <!-- DEPOIMENTOS -->
-  <section id="depoimentos" class="section light reveal">
-    <div class="container">
-      <h2>Depoimentos</h2>
-      <div class="depoimentos">
-        <blockquote>
-          "Excelente profissional..."
-        </blockquote>
-        <blockquote>
-          "Me ajudou muito no processo..."
-        </blockquote>
+        <div class="psicoterapia-texto">
+          <h2>A Psicoterapia</h2>
+
+          <p>
+            Aqui você encontrará a psicoterapia como um espaço seguro, ético e acolhedor.
+            É um ambiente destinado ao cuidado e ao tratamento das questões apresentadas
+            pelo paciente, conduzido com sensibilidade, afeto e respeito à subjetividade
+            de cada sujeito.
+          </p>
+
+          <p>
+            Durante as sessões, você terá liberdade para apresentar suas queixas,
+            anseios, dificuldades, questionamentos e conquistas, conforme se sentir
+            confortável.
+          </p>
+        </div>
+
+        <div class="psicoterapia-info">
+          <div class="info-box">
+            <span class="info-titulo">Duração da sessão</span>
+            <span class="info-valor">50 minutos</span>
+          </div>
+
+          <div class="info-box">
+            <span class="info-titulo">Formato</span>
+            <span class="info-valor">Online</span>
+          </div>
+
+          <div class="info-box">
+            <span class="info-titulo">Ambiente</span>
+            <span class="info-valor">Seguro e acolhedor</span>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section reveal">
-    <div class="container">
-      <h2>Contato</h2>
-      <form class="form">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensagem"></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </div>
-  </section>
+    <!-- CONTATO -->
+    <section id="contato" class="section light reveal">
+      <div class="container contato">
+
+        <h2 class="contato-titulo">Contato</h2>
+
+        <p class="contato-texto">
+          Para agendar uma sessão ou tirar dúvidas, entre em contato pelo WhatsApp.
+          Será um prazer acolher você.
+        </p>
+
+        <a 
+          href="https://wa.me/5534991814103?text=Olá%2C%20gostaria%20de%20agendar%20uma%20sessão."
+          target="_blank"
+          class="whatsapp-btn"
+        >
+          Agendar pelo WhatsApp
+        </a>
+
+      </div>
+    </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 - Psicóloga Nome | CRP 00/00000</p>
+      <p>© 2026 - Psicóloga Yasmin Vitória | CRP 04/84724</p>
     </div>
   </footer>
 
