@@ -6,6 +6,14 @@ document.getElementById("menuToggle").addEventListener("click", function(){
   document.querySelector("nav ul").classList.toggle("active");
 });
 
+document.addEventListener("click", function(e) {
+  const menu = document.querySelector("nav ul");
+  const toggle = document.getElementById("menuToggle");
+
+  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+    menu.classList.remove("active");
+  }
+});
 // animação scroll
 
 function reveal() {
@@ -36,23 +44,11 @@ function updateCarousel() {
   track.style.transform = `translateX(-${index * width}px)`;
 }
 
-nextBtn?.addEventListener("click", () => {
-  const total = track.children.length;
-  index = (index + 1) % total;
-  updateCarousel();
-});
-
-prevBtn?.addEventListener("click", () => {
-  const total = track.children.length;
-  index = (index - 1 + total) % total;
-  updateCarousel();
-});
-
 setInterval(() => {
   const total = track.children.length;
   index = (index + 1) % total;
   updateCarousel();
-}, 3000); // troca a cada 4 segundos
+}, 4000); // troca a cada 4 segundos
 
 window.addEventListener("resize", updateCarousel);
 

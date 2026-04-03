@@ -30,10 +30,18 @@ body {
     font-size: 3vh;
 }
 
+.logo_texto span
+{
+  color: #fa75e2;
+  font-weight: 10;
+  font-size: 5vh;
+  font-family: Cal Sans, sans-serif;
+}
+
 .logo_texto h1 {
     font-size: 5vh;
     font-family: Cal Sans, sans-serif;
-    font-weight: 50;
+    font-weight: 10;
 }
 
 .header {
@@ -64,15 +72,37 @@ nav a {
 }
 
 nav a:hover {
-  color: #6c8ea4;
+  color: #fa75e2;
 }
 
 .hero {
-  background: #f5f5f5;
+  position: relative;
   padding: 160px 0;
   height: 100%;
   width: auto;
   text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/hero_corr.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: -1;
 }
 
 .hero h2 {
@@ -112,18 +142,28 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background: #6c8ea4;
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   padding: 12px 25px;
+  border: 1px solid white;
   text-decoration: none;
   border-radius: 6px;
   margin-top: 15px;
   transition: 0.3s;
 }
 
+.titulo-rosa
+{
+  color: #fa75e2;
+  font-weight: 600;
+}
+
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  background-color: #fa75e2;
+  border: 1px solid white;
+  color: white;
 }
 
 .form {
@@ -444,4 +484,119 @@ nav a:hover {
   .menu-toggle {
     display: block;
   }
+  /* ================= MOBILE AJUSTES (SEM ALTERAR DESKTOP) ================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+    position: relative;
+    z-index: 2000;
+  }
+
+  /* evita que o menu cubra o botão */
+  nav {
+    position: relative;
+    z-index: 1500;
+  }
+
+  nav ul {
+    z-index: 1400;
+  }
+  /* HERO */
+  .hero {
+    padding: 120px 0;
+  }
+
+  .hero h2 {
+    font-size: 4vh;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 2.2vh;
+  }
+
+  /* SOBRE - carrossel em cima */
+  .sobre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    margin-bottom: 20px;
+  }
+
+  .carousel img {
+    height: 260px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 4.5vh;
+  }
+
+  .sobre-texto p {
+    font-size: 2.2vh;
+  }
+
+  /* ABORDAGEM */
+  .abordagem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abordagem-titulo {
+    font-size: 4.5vh;
+  }
+
+  .abordagem-intro {
+    font-size: 2.2vh;
+  }
+
+  .abordagem-texto {
+    font-size: 2.2vh;
+  }
+
+  /* PSICOTERAPIA */
+  .psicoterapia-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .psicoterapia-texto h2 {
+    font-size: 4.5vh;
+    text-align: center;
+  }
+
+  .psicoterapia-texto p {
+    font-size: 2.2vh;
+  }
+
+  .psicoterapia-info {
+    margin-top: 20px;
+  }
+
+  .info-box {
+    text-align: center;
+  }
+
+  .info-valor {
+    font-size: 3vh;
+  }
+
+  /* CONTATO */
+  .contato-titulo {
+    text-align: center;
+    font-size: 4.5vh;
+  }
+
+  .contato-texto {
+    font-size: 2.2vh;
+  }
+
+  .whatsapp-btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding: 14px;
+    font-size: 2.2vh;
+  }
+}
 }
