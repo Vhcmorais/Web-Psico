@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Yasmin Vitória</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="container nav">
+        <div class="logo_texto">
+            <h1 class="logo">Psicóloga Yasmin Vitória</h1>
+            <h2>CRP 04/84724</h2>
+        </div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="#sobre">Apresentação</a></li>
+          <li><a href="#servicos">Abordagem</a></li>
+          <li><a href="#abordagem">A Psicoterapia</a></li>
+          <li><a href="#depoimentos">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero reveal">
+    <div class="container">
+      <h2>Psicoterapia com afeto, arte e subjetividade!</h2>
+      <p>Atendimentos online</p>
+      <a href="#contato" class="btn">Agendar sessão!</a>
+    </div>
+  </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section reveal">
+    <div class="container sobre-grid">
+
+        <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <img src="img1.jpg">
+            <img src="img2.jpg">
+            <img src="img3.jpg">
+        </div>
+
+        <button class="carousel-btn prev" id="prevBtn">❮</button>
+        <button class="carousel-btn next" id="nextBtn">❯</button>
+        </div>
+
+        <div class="sobre-texto">
+        <h2>Sobre mim</h2>
+        <p>
+            Meu nome é Yasmin Vitória, tenho 23 anos e sou psicóloga formada pela Universidade Federal 
+            de Uberlândia (UFU). Ao longo da minha trajetória acadêmica, percorri diferentes espaços de 
+            aprendizagem, nos quais a arte se destacou como um importante recurso para a construção do 
+            conhecimento e para a compreensão das experiências humanas. <br>
+            
+            Nesse percurso, encontrei na 
+            Psicologia Clínica e na Psicologia Escolar campos de atuação com os quais me identifiquei 
+            profundamente. Essas vivências me permitiram reconhecer a potência do encontro com o outro 
+            em contextos acadêmicos, sociais e em projetos e eventos, marcados por trocas significativas 
+            e pela construção de vínculos afetivos.
+        </p>
+        </div>
+
+    </div>
+    </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section light reveal">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Psicoterapia Individual</h3>
+          <p>Atendimento personalizado para adultos.</p>
+        </div>
+        <div class="card">
+          <h3>Terapia de Casal</h3>
+          <p>Fortalecimento de vínculos e comunicação.</p>
+        </div>
+        <div class="card">
+          <h3>Orientação Profissional</h3>
+          <p>Auxílio em decisões de carreira.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABORDAGEM -->
+  <section id="abordagem" class="section reveal">
+    <div class="container">
+      <h2>Abordagem</h2>
+      <p>
+        Descrição da abordagem terapêutica (TCC, Psicanálise, Humanista, etc).
+      </p>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section light reveal">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <div class="depoimentos">
+        <blockquote>
+          "Excelente profissional..."
+        </blockquote>
+        <blockquote>
+          "Me ajudou muito no processo..."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section reveal">
+    <div class="container">
+      <h2>Contato</h2>
+      <form class="form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem"></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 - Psicóloga Nome | CRP 00/00000</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
