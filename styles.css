@@ -649,6 +649,20 @@ nav a:hover {
     line-height: 1.2;
   }
 
+  .logo_texto h1
+  {
+    font-size: 1.5rem;
+  }
+
+    .logo_texto span
+  {
+    font-size: 1.5rem;
+  }
+
+  .logo_texto h2 {
+    font-size: 1rem;
+  }
+
   .hero p {
     font-size: 2.2vh;
   }
