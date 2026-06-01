@@ -1,4 +1,4 @@
-# Psychology Professional Website
+# 🧠 Psychology Professional Website
 
 A modern and responsive professional website developed for a psychologist, designed to provide a welcoming online presence, share professional information, and facilitate communication with clients.
 
